@@ -10,7 +10,7 @@
         android:name=".AppContext"
         android:supportsRtl="true"
         android:theme="@style/Theme.PruebJuan">
-        <activity android:name=".MainActivity">
+        <activity android:name=".models.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
