@@ -24,28 +24,13 @@ class RepoUsers(database: MyDatabase) {
         userDao.update(user)
     }
 
+/*
     fun getAllLiveData() : LiveData<List<User>> {
         return userDao.getAllLiveData()
     }
+*/
 
     suspend fun getAll() = withContext(Dispatchers.IO) {
         userDao.getAll()
     }
-
-    fun saveWithOutCR(user: User) {
-        userDao.insert(user)
-    }
-
-    fun getAllWithOutCR(): List<User> {
-        return userDao.getAll()
-    }
-
-    fun deleteWithOutCR(user: User) {
-        userDao.delete(user)
-    }
-
-    fun getFirstWithOutCR(): User {
-        return userDao.getFirst()
-    }
-
 }
