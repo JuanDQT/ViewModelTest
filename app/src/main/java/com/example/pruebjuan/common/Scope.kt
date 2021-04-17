@@ -1,4 +1,4 @@
-package com.avisual.tasklistapp.common
+package com.example.pruebjuan.common;
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

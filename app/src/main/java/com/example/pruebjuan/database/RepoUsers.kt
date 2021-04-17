@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import com.example.pruebjuan.models.User
 import com.example.pruebjuan.models.daos.UserDao
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 class RepoUsers(database: MyDatabase) {
@@ -31,6 +32,7 @@ class RepoUsers(database: MyDatabase) {
 */
 
     suspend fun getAll() = withContext(Dispatchers.IO) {
+        delay(5000)
         userDao.getAll()
     }
 }

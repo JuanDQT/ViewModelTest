@@ -1,8 +1,7 @@
-package com.avisual.tasklistapp.common
+package com.example.pruebjuan.common;
 
 import androidx.annotation.CallSuper
 import androidx.lifecycle.ViewModel
-import com.avisual.tasklistapp.common.Scope
 
 abstract class ScopeViewModel : ViewModel(), Scope by Scope.Impl() {
 
